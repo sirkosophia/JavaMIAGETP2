@@ -35,9 +35,9 @@ exercice 1:
 
 Exercice2: 
 
-1)A la ligne 36, on doit e() en protected car on ne peut pas restreindre la portée d'une méthode dans une classe fille.
+1)A la ligne 36 on doit e() en protected car on ne peut pas restreindre la portée d'une méthode dans une classe fille.
 
-A la ligne 40, le type de la méthode h() n'est pas compatible avec celui de la méthode h() dans la superclasse. Le type de la méthode qui override doit être soit le meme ou un sous-classe du type que retourne la méthode de base.
+A la ligne 40 le type de la méthode h() n'est pas compatible avec celui de la méthode h() dans la superclasse. Le type de la méthode qui override doit être soit le meme ou un sous-classe du type que retourne la méthode de base.
 
 A la ligne 41 meme problème que la ligne 40
 
@@ -45,7 +45,7 @@ A la ligne 44 c'est la meme chose, on peut pas declarer une exception parent de 
 
 A la ligne 54 la classe Mere n'as pas de mettre miage
 
-%%A la ligne 56, l'objet mereFille a comme type effectif Fille mais est déclaré en tant que Mere, pour qui la méthode miage n'est pas définie
+A la ligne 56 comme on a upcast merefille, parmis les objets de la classe fille on a accès que à ce qui sont Overridden. Comme miage n'existe pas dans la classe mére donc n'est pas Overridden donc on a pas accès.
 
 3)La surcharge survient lorsque deux méthodes ou plus dans une classe ont le même nom de méthode mais des paramètres différents. 
 Redéfinition signifie avoir deux méthodes avec le même nom et les mêmes paramètres, l'une des méthodes est dans la classe parente et l'autre dans la classe fille
@@ -54,57 +54,75 @@ Dans Mere c est surcharge
 Dans Fille  c() et d() sont surcharges et redéfinis 
  a() est redéfinie b() est est redéfinie. f() est redéfinie. j() est redéfinie. g() est redéfinie. l() est redéfinie. m() est redéfinie.
 
-4)Miage 
+4)
+Miage 
+
 la méthode miage de la classe Fille
 
-Miage  
+Miage 
+
 on a forcé le cast de l'objet mereFille en Fille. Ce qui permet l'accès à la méthode miage de Fille
 
 Mere_a 
+
 la méthode a() de la classe Mere
 
 Fille_a 
-%% la méthode a() de Fille car le type effectif de mereFille est Fille
+
+la méthode a() de Fille car cette méthode est Overriden dans la classe Fille, on a donc accès
 
 Fille_a  
+
 la méthode a() de la classe Fille
 
 Fille_a 
-%%le type effectif de mereFille est Fille donc on utilise la méthode a() de Fille
+
+si on force le cast de merefille en Mere ca change rien car elle est déjà en Mere, donc c'est pareil qu'avant: la méthode a() de Fille car cette méthode est Overriden dans la classe Fille, on a donc accès
 
 Fille_b(Fille) 
-%% le type effectif de mereFille est Fille donc on utilise la méthode b() de Fille
+
+a méthode b() de Fille car cette méthode est Overriden dans la classe Fille, on a donc accès
 
 Mere_c
- il utilise la seule méthode c() qui n'a pas de paramètres. C'est une méthode de Mere et mereFille est déclaré en Mere donc il y a accès
+
+il utilise la seule méthode c() qui n'a pas de paramètres. C'est une méthode de Mere et mereFille est casté en Mere donc on a accès
 
 Fille_c(Mere) 
-on appelle la méthode c de type effectif Fille avec comme paramètre un objet de type Mere
+
+la methode c(Mere) de la classe fille car cette méthode est Overridden donc on a accès et c'est bien le paramètre de type Mere.
 
 Fille_c(Mere) 
- on appelle la méthode c de type effectif Fille avec comme paramètre un objet de type Mere
+
+la même chose et comme merefille est casté en Mere on a bien un paramètre de type Mere 
 
 Fille_c(Mere)
 
-Fille_c(Fille) 
+Fille_c(Fille)
+
 on appelle la méthode c de Fille avec comme paramètre un objet de type Fille
 
 static Mere_d 
- on appelle la méthode d() de la classe Mere
+
+on appelle la méthode d() de la classe Mere
 
 static Mere_d  
+
 on appelle la méthode d() de la classe Mere car l'objet mereFille est déclaré en tant que Mere
 
 Mere_f  
+
 on appelle une méthode de Mère sur un objet de type Mere
 
-Mere_f  
+Mere_f 
+
 la classe Fille n'ayant pas de méthode printF redéfinie on utilise celle de la classe Mere 
  
 Fille_j 
- mereFille est de type effectif Fille donc c'est la méthode j de Fille qui est appelée
+
+mereFille est de type effectif Fille donc c'est la méthode j de Fille qui est appelée
 
 Mere_k  
+
 la classe Fille n'ayant pas de méthode k() redéfinie, on appelle la méthode k() de Mere
 
 Fille_l  
