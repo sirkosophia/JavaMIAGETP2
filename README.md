@@ -97,6 +97,8 @@ la même chose et comme merefille est casté en Mere on a bien un paramètre de 
 
 Fille_c(Mere)
 
+Comme la methode c(Mere) avec le paramètre Mere est écrite en prmeière dans la classe fille et que et que l'attribue fille est de Classe Mere, on execute la methode c(Mere) de la classe Fille
+
 Fille_c(Fille)
 
 on appelle la méthode c de Fille avec comme paramètre un objet de type Fille
@@ -107,7 +109,7 @@ on appelle la méthode d() de la classe Mere
 
 static Mere_d  
 
-on appelle la méthode d() de la classe Mere car l'objet mereFille est déclaré en tant que Mere
+on appelle la méthode d() de la classe Mere car d est une methode static et merefille est de cast Mere
 
 Mere_f  
 
@@ -115,11 +117,11 @@ on appelle une méthode de Mère sur un objet de type Mere
 
 Mere_f 
 
-la classe Fille n'ayant pas de méthode printF redéfinie on utilise celle de la classe Mere 
+la classe Fille n'ayant pas de méthode printF redéfinie on utilise celle de la classe Mere qui appelle une methode f() et comme la methode f() dans Fille est protected, on appelle celle de la classe Mere
  
 Fille_j 
 
-mereFille est de type effectif Fille donc c'est la méthode j de Fille qui est appelée
+la methode j() est bien overridden dans la classe Fille donc c'est la methode j() de las classe fille qu'on appelle
 
 Mere_k  
 
