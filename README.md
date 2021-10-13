@@ -127,10 +127,12 @@ Mere_k
 
 la classe Fille n'ayant pas de méthode k() redéfinie, on appelle la méthode k() de Mere
 
-Fille_l  
+Fille_l 
+
 la méthode l() étant redéfinie dans la classe Fille, on appelle celle ci sur l'objet mereFille de type effectif Fille
 
 Fille_m 
+
 la méthode m() étant redéfinie dans la classe Fille, on appelle celle ci sur l'objet mereFille de type effectif Fille
 
 
