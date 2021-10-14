@@ -5,7 +5,7 @@ package fr.dauphine.javaavance.td2;
  * @author sophiasirko
  *
  */
-public class Add extends Expr{
+public class Add implements Expr{
 	private double reel1; 
 	private double reel2;
 	
@@ -16,6 +16,7 @@ public class Add extends Expr{
 	 */
 	public Add(Expr exp1, Expr exp2){
 		this.reel1 = exp1.eval().getReel();
+		this.reel2 = exp2.eval().getReel();
 		this.reel2 = exp2.eval().getReel();
 	}
 	
