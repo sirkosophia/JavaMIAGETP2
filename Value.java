@@ -6,9 +6,9 @@ package fr.dauphine.javaavance.td2;
  * @version 1.0 Build 18:32 11 Oct, 2021
  *
  */
-public class Value extends Expr{
+public class Value implements Expr{
 	
-	private double reel;
+	final private double reel;
 	
 	/**
 	 * Constructs and initializes Value that represents an Arithmetic Expression as a real number
