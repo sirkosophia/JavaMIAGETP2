@@ -8,7 +8,7 @@ package fr.dauphine.javaavance.td2;
 public class Add implements Expr{
 	private double reel1; 
 	private double reel2;
-	
+	//test
 	/**
 	 * Constructs and initializes Add that represents an Arithmetic Expression of adding the result of two expression
 	 * @param exp1 arithmetic expression 1 of type Expr
