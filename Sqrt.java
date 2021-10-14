@@ -5,7 +5,7 @@ package fr.dauphine.javaavance.td2;
  * @author sophiasirko
  *
  */
-public class Sqrt extends Expr{
+public class Sqrt implements Expr{
 	private double reel1;
 	
 	/**
