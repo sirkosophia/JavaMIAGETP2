@@ -1,17 +1,17 @@
 package fr.dauphine.javaavance.td2;
 
 /**
- * This is an abstract superclass that represents arithmetic expressions 
+ * This is an Interface that represents an arithmetic expressions 
  * @author sophiasirko
  *
  */
-public abstract class Expr {
+public interface Expr {
 	
 	/**
 	 * Evaluates an arithmetic expression 
 	 * @return the result of the expression
 	 */
-	abstract Value eval();
+	public Value eval();
 
 	
 }
