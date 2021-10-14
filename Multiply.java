@@ -6,7 +6,7 @@ package fr.dauphine.javaavance.td2;
  *
  */
 
-public class Multiply extends Expr{
+public class Multiply implements Expr{
 	private double reel1; 
 	private double reel2;
 	
